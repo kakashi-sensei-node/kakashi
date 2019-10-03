@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midify - Your personalized todo app!!</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-center text-div">
+        <h1 class="blinking">Midify</h1>
+        <p class="lead">Your personalized todo app!!</p>
+      </div>
+      <div class="form-div">
+        <form id="form-field" action="/create-item" method="POST">
+          <div class="d-flex align-items-center">
+            <input id="item-field" name="item" autofocus autocomplete="off" class="form-control mr-3 shadow" type="text" style="flex: 1;">
+            <button class="btn btn-primary insert-me shadow">Add New Item</button>
+          </div>
+        </form>
+      </div>
+      <ul id="list-field" class="list-group">
+        <li class="list-group-item list-group-item-action shadow-lg d-flex align-items-center justify-content-between list-here">
+          <span class="item-text">Fake text</span>
+            <div>
+            <button data-id="" class="edit-me btn btn-secondary btn-sm mr-1">Edit</button>
+            <button data-id="" class="delete-me btn btn-danger btn-sm">Delete</button>
+            </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
